@@ -37,6 +37,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base.cs" />
+    <Compile Include="Champions\Ashe.cs" />
     <Compile Include="Champions\Caitlyn.cs" />
     <Compile Include="Champions\Graves.cs" />
     <Compile Include="Champions\Jinx.cs" />

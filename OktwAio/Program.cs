@@ -20,6 +20,8 @@ namespace OneKeyToWin_AIO_Sebby
         public static bool Combo = false, Farm = false, Harass = false, LaneClear = false, None = false;
         public static int tickIndex = 0;
 
+        private static string OktNews = "Port and fix by Polak-i";
+
         static void Main(string[] args)
         {
             GameEvent.OnGameLoad += GameEvent_OnGameLoad;
@@ -55,6 +57,9 @@ namespace OneKeyToWin_AIO_Sebby
                 case "Kalista":
                     new Champions.Kalista();
                     break;
+                case "Ashe":
+                    new Champions.Ashe();
+                    break;
             }
 
             Config.Add(new Menu("predictionMode", "Prediction MODE")
@@ -68,6 +73,9 @@ namespace OneKeyToWin_AIO_Sebby
             Game.OnUpdate += Game_OnUpdate;
 
             Config.Attach();
+
+            Game.Print("<font size='30'>OneKeyToWin</font> <font color='#b756c5'>by Sebby</font>");
+            Game.Print("<font color='#b756c5'>OKTW NEWS: </font>" + OktNews);
         }
 
         private static void Game_OnUpdate(EventArgs args)
