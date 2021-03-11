@@ -60,12 +60,9 @@ namespace OneKeyToWin_AIO_Sebby
                 case "Ashe":
                     new Champions.Ashe();
                     break;
-                case "Corki":
-                    new Champions.Corki();
-                    break;
             }
 
-            Config.Add(new Menu("predictionMode" + Player.CharacterName, "Prediction MODE")
+            Config.Add(new Menu("predictionMode", "Prediction MODE")
             {
                 QHitChance,
                 WHitChance,
