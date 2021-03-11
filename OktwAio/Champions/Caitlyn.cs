@@ -496,7 +496,7 @@ namespace OneKeyToWin_AIO_Sebby.Champions
                     {
                         if (hitchanceE.Enabled)
                         {
-                            E.CastIfHitchanceEquals(t, HitChance.Dash);
+                            E.CastIfHitchanceMinimum(t, HitChance.Immobile);
                         }
 
                         if (Player.HealthPercent < 30)
