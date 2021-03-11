@@ -388,7 +388,7 @@ namespace OneKeyToWin_AIO_Sebby.Champions
                     }
                     else if (OktwCommon.GetPassiveTime(Player, "XerathArcanopulseChargeUp") < 2 || Player.CountEnemyHeroesInRange(1000) > 0)
                     {
-                        Q.CastIfHitchanceMinimum(t, HitChance.VeryHigh);
+                        Q.CastIfHitchanceEquals(t, HitChance.VeryHigh);
                     }
                 }
                 else if (t.IsValidTarget(Q.Range - 300))
